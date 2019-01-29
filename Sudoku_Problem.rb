@@ -113,7 +113,7 @@ for j in 0...x
       elsif input[i][j].eql?("F")
         input[i][j] = 15
       elsif input[i][j].eql?("G")
-        input[i][j] = G
+        input[i][j] = 16
       else
         input[i][j] = input[i][j].to_i  
       end      
