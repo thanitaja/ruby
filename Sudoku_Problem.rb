@@ -127,7 +127,7 @@ solution(input,x)
 
 if x==16
 for i in 0...16
-  for i in 0...16
+  for j in 0...16
     if input[i][j].eql?(10)
         input[i][j] = A
       elsif input[i][j].eql?(11)
