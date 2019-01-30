@@ -18,9 +18,9 @@ def in_squre(input,i,j,k,size)
     x = 6 if i > 5
     y = 3 if j > 2
     y = 6 if j > 5
-      x.upto(x+2) do |x|
-        y.upto(y+2) do |y|
-           if input[x][y] == k
+      for xx in x..x+2
+        for yy in y..y+2
+            if input[xx][yy] == k
               return true
            end
         end
@@ -32,9 +32,9 @@ def in_squre(input,i,j,k,size)
     y = 4  if j > 3
     y = 8 if j > 7
     y = 12 if j > 11
-      x.upto(x+3) do |x|
-        y.upto(y+3) do |y|
-           if input[x][y] == k
+  for xx in x..x+3
+        for yy in y..y+3
+            if input[xx][yy] == k
               return true
            end
         end
@@ -42,9 +42,9 @@ def in_squre(input,i,j,k,size)
   else
     x = 2 if i > 1
     y = 2 if j > 1
-     x.upto(x+1) do |x|
-        y.upto(y+1) do |y|
-            if input[x][y] == k
+     for xx in x..x+1
+        for yy in y..y+1
+            if input[xx][yy] == k
               return true
            end
         end
@@ -153,4 +153,3 @@ for k in 0...x
 print input[k]
 print "\n"
 end
-
