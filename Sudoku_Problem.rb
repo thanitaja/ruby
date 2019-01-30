@@ -71,7 +71,7 @@ unless point
   return [true,input] 
 end 
 i,j = point[0],point[1]
-0.upto(size) do |k|
+for k in 0..size
   if in_row(input,i,k) || in_col(input,j,k,size) || in_squre(input,i,j,k,size)
     next
   end
